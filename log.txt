@@ -34,3 +34,16 @@ Timestamp: Sat Jul 29 2023 15:43:01 GMT-0400 (Eastern Daylight Time)
 URL: /favicon.ico
 Timestamp: Sat Jul 29 2023 15:43:01 GMT-0400 (Eastern Daylight Time)
 
+::1 - - [03/Aug/2023:13:32:02 +0000] "GET / HTTP/1.1" 200 202 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:13:32:02 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:13:32:34 +0000] "GET /documentation HTTP/1.1" 404 152 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:13:33:25 +0000] "GET /public/documentation HTTP/1.1" 404 159 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:13:54:28 +0000] "GET /movies HTTP/1.1" 200 1397 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:13:54:47 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:13:55:17 +0000] "GET / HTTP/1.1" 200 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:13:55:45 +0000] "GET /documentation HTTP/1.1" 404 152 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:13:58:51 +0000] "GET /documentation.html HTTP/1.1" 200 738 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:14:00:06 +0000] "GET /documentation.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:14:00:09 +0000] "GET /documentation.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:14:00:28 +0000] "GET /movies HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [03/Aug/2023:14:00:37 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
