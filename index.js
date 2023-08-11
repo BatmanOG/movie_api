@@ -1,9 +1,13 @@
 const express = require('express'),
+    app = express(),
     morgan = require('morgan'),
     fs = require('fs'),  
-    path = require('path');
+    path = require('path'),
+    uuid = require('uuid');
 
-const app = express();
+let users =[
+    
+]
 
 let topMovies = [
     {
@@ -76,6 +80,7 @@ let topMovies = [
         year: '2016'
     }
 ]
+
 
 const accessLogStream = fs.createWriteStream(path.join(__dirname, 'log.txt'), {flags: 'a'});
 
