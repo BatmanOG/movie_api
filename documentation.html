@@ -21,8 +21,135 @@
         <table>
             <thead>
                 <tr>
-                    
+                    <td>business logic</td>
+                    <td>URL</td>
+                    <td>HTTP Method</td>
+                    <td>Query Parameters</td>
+                    <td>Path Variables</td>
+                    <td>Response data</td>
                 </tr>
+                <tr>
+                    <td>Return list of all movies</td>
+                    <td>/movies</td>
+                    <td>GET/Read</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>json array holding all info on the movies.</td>
+                </tr>
+                <tr>
+                    <td>Return information on specific movie</td>
+                    <td>/movies/:title</td>
+                    <td>GET/Read</td>
+                    <td>[title]</td>
+                    <td>{title}</td>
+                    <td> {
+                        Title:'movieTitle',
+                        Year:'xxxx',
+                        certificate:'x',
+                        Time:'runTime',
+                        genre:['genre'],
+                        textmuted:'description.',
+                        Director:'directorName',
+                        Stars:['StarNames']
+                        }</td>
+                </tr>
+                <tr>
+                    <td>Return a list of movies by a specific director</td>
+                    <td>/movies/director/:directorName</td>
+                    <td>GET/Read</td>
+                    <td>[directorName]</td>
+                    <td>:directorName</td>
+                    <td>{
+                        Title:'movieTitle',
+                        Year:'xxxx',
+                        certificate:'x',
+                        Time:'runTime',
+                        genre:['genre'],
+                        textmuted:'description.',
+                        Director:'directorName',
+                        Stars:['StarNames']
+                        }</td>
+                </tr>
+                <tr>
+                    <td>Return information on a specific director</td>
+                    <td>/Directors/:director</td>
+                    <td>GET/Read</td>
+                    <td>[Director]</td>
+                    <td>:director</td>
+                    <td>{
+                        directorName: 'Name',
+                        Birthdate: 'Month Day, Year',
+                        Birthplace: 'location',
+                        biography:`Discription`
+                    }</td>
+                </tr>
+                <tr>
+                    <td>Return list of movies and their info from a certian genre</td>
+                    <td>/movies/genre/:genreName</td>
+                    <td>GET/Read</td>
+                    <td>[genre]</td>
+                    <td>{genreName}</td>
+                    <td>{
+                        Title:'movieTitle',
+                        Year:'xxxx',
+                        certificate:'x',
+                        Time:'runTime',
+                        genre:['genre'],
+                        textmuted:'description.',
+                        Director:'directorName',
+                        Stars:['StarNames']
+                        }</td>
+                </tr>
+                <tr>
+                    <td>Creat new user</td>
+                    <td>/users</td>
+                    <td>POST/Create</td>
+                    <td>[newUser]</td>
+                    <td>none</td>
+                    <td>{
+                        id: id number,
+                        name: 'Name',
+                        favoriteMovies: []
+                    }</td>
+                </tr>
+                <tr>
+                    <td>update username</td>
+                    <td>/users/:id</td>
+                    <td>PUT/Update</td>
+                    <td>[id]</td>
+                    <td>{updatedUser}</td>
+                    <td>{
+                        id: id number,
+                        name: 'updatedName',
+                        favoriteMovies: []
+                    }</td>
+                </tr>
+                <tr>
+                    <td>Create favorite movie list</td>
+                    <td>/users/:id/:title</td>
+                    <td>POST/Create</td>
+                    <td>[ id, title]</td>
+                    <td>none</td>
+                    <td>(`${title} has been added to user ${user.name}'s favorites`)</td>
+                </tr>
+                <tr>
+                    <td>Remove movie from favorites list</td>
+                    <td>/users/:id/:title</td>
+                    <td>DELETE/Delete</td>
+                    <td>[ id, title]</td>
+                    <td>none</td>
+                    <td>(`${title} has been remove from user ${user.name}'s favorites`)</td>
+                </tr>
+                <tr>
+                    <td>Remove user</td>
+                    <td>/users/:id</td>
+                    <td>DELETE/Delete</td>
+                    <td>[ id ]</td>
+                    <td>none</td>
+                    <td>(`user ${user.name} has been deleted`)</td>
+                </tr>
+
+
             </thead>
         </table>
 
